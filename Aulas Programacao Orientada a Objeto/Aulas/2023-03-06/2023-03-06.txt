@@ -1,0 +1,23 @@
+
+
+	_ A partir da Classe(Domínio do problema) cria-se um escopo para 1 ou vários Objetos 
+
+	EXEMPLO: Classe Professor: (Cria Atributos e métodos que caracterizam os Objetos)
+			Atributos: Nome, Idade, Disciplina
+			Método: Lecionar
+			
+			Faz-se uma instância da Classe para criar um Objeto:
+		
+		Objeto: Prof. Andrey
+			Nome: Andrey
+			Idade: 28
+			Disciplina: POO
+			Leciona POO
+
+		Objeto: Prof. Roberto
+			Nome: Roberto
+			Idade: 58
+			Disciplina: SO
+			Leciona SO
+			
+		

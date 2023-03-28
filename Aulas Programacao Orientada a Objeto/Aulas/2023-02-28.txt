@@ -1,0 +1,46 @@
+                                     ORIENTAÇÃO A OBJETOS                                                                                    28/02/2023
+
+		O que é? Como funciona?
+
+	_ É um forma de planejar e contruir um software que ajuda na organização e resolve problemas na programação;
+	_ Vantagens: Quebra o programa em partes, visão completa, código de fácial manutenção, baixo aclopamento, alta coesão.
+	_ Não está relacionada a uma linguagem de programação em específico;	
+
+		Definições:
+
+	_ OBEJTO: Entidade que possui característica e comportamentos. É uma instância de uma classe, ou seja, a partir da classe se pode criar qualquer objeto;
+	_ IMPLEMENTAÇÃO: Define como algo é feito(código em si);
+	_ DOMÍNIO: Espaço onde o problema reside. O conceitos de onjetos significa "unir" o Domínio e a Implementação;
+	_ CLASSE: Agrupamento de atributos e comportamentos em comum, mas não iguais, podem variar os valores e como é a realização.
+	_ ATRIBUTOS: Características de uma classe que são visíveis externamente. É o que o objeto é(nome, endereço, idade, formação...)
+	_ COMPORTAMENTOS: É o que o objeto faz.(lecionar, aplicar avaliação...)
+	
+
+	_ Paradigma Procedural: 
+
+	* Construção de procedimentos com chamadas sequenciais;
+	* Evoução em relação à linguagem binária;
+	* Função mais entendível, porém limita a reutilização de código;
+	* Dados separados de procedimentos.
+	* Mudança de representação de dados exigia a procura para fazer a alteração no lugar;
+
+			Problemas:
+
+	* Não tem uma centralização de validação
+	* São extensos e complexos para entender;
+	* Dificuldade para alerar/lembrar as partes e também dificuldade para adicionar as fuções;
+	* Gera duplicidade de códigos;
+	* Não tem como criar uma conexão entre dados(características) e funcionalidades(comportamentos) de forma mais simples;
+	
+			Soluções:
+
+	* No paradigma orientado a objetos, é muito fácil ter conexão entre dados e funcionalidades por meio dos recursos da própria linguagem;
+	* Organizar e escrever menos (economia de código);
+	* Concentrar as responsabilidades nos pontos certos
+
+	
+				PROGRAMAÇÃO ORIENTADA A OBJETOS:
+
+	_ Estrutura um programa, dividindo-o em vários objetos de alto nível;
+	_ Cada objeto modela um aspecto do problema que está sendo resolvido, ou seja, o objeto faz parte do Domínio do problema;
+	_ Promove interação entre objetos para orientar o fluxo global do programa.

@@ -1,0 +1,352 @@
+
+Capítulo 1 – Visão Geral
+
+1. Como seria utilizar um computador sem um sistema operacional? Quais são suas duas principais
+funções?
+Sem o sistema operacional, um usuário para interagir com o computador deveria conhecer profundamente diversos
+detalhes sobre hardware do equipamento, o que tornaria seu trabalho lento e com grandes possibilidades de erros. As
+duas principais funções são “facilidade de acesso aos recursos do sistema” e “compartilhamento de recursos de forma
+organizada e protegida”.
+
+2. Explique o conceito de máquina virtual. Qual a grande vantagem em utilizar este conceito?
+O computador pode ser visualizado como uma máquina de camadas, onde inicialmente existem duas camadas:
+hardware (nível 0) e sistema operacional (nível 1). Desta forma, o usuário pode enxergar a máquina como sendo apenas
+o sistema operacional, ou seja, como se o hardware não existisse. Esta visão modular e abstrata é chamada máquina
+virtual. A vantagem desse conceito é tornar a interação entre usuário e computador mais simples, confiável e eficiente.
+
+3. Defina o conceito de uma máquina de níveis ou camadas.
+O computador pode ser visualizado como uma máquina de níveis ou máquina de camadas, possuindo tantos níveis
+quanto forem necessários para adequar o usuário às suas diversas aplicações. Quando o usuário está trabalhando em um
+desses níveis, não necessita saber da existência das outras camadas. Com isso a interação entre usuário e computador
+apresenta-se mais simples, confiável e eficiente.
+
+4. Quais os tipos de sistemas operacionais existentes?
+Sistemas monoprogramáveis ou monotarefa, sistemas multiprogramáveis ou multitarefa e sistemas com múltiplos
+processadores.
+
+5. Por que dizemos que existe uma subutilização de recursos em sistemas monoprogamáveis?
+Porque em sistemas monoprogramáveis somente é possível a execução de um programa por vez. Como um programa
+não utiliza todos os recursos do sistema totalmente ao longo da sua execução, existe ociosidade e, consequentemente,
+subutilização de alguns recursos.
+
+6. Qual a grande diferença entre sistemas monoprogramáveis e sistemas multiprogramáveis?
+Os sistemas monoprogramáveis se caracterizam por permitir que o processador, a memória e os periféricos permaneçam
+exclusivamente dedicados à execução de um único programa. Nos sistemas multiprogramáveis ou multitarefa, os
+recursos computacionais são compartilhados entre os diversos usuários e aplicações. Enquanto em sistemas
+monoprogramáveis existe apenas um programa utilizando os recursos disponíveis, nos multiprogramáveis várias
+aplicações compartilham esses mesmos recursos.
+
+7. Quais as vantagens dos sistemas multiprogramáveis?
+As vantagens do uso de sistemas multiprogramáveis são a redução do tempo de resposta das aplicações processadas no
+ambiente e de custos, a partir do compartilhamento dos diversos recursos do sistema entre as diferentes aplicações.
+
+8. Um sistema monousuário pode ser um sistema multiprogramável? Dê um exemplo.
+Sim, somente um usuário interage com o sistema podento possuir diversas aplicações executando concorrentemente. O
+sistema Windows NT é um exemplo.
+
+9. Quais são os tipos de sistemas multiprogramáveis?
+Sistemas batch, sistemas de tempo compartilhado e sistemas de tempo real.
+
+10. O que caracteriza o processamento batch? Quais aplicações podem ser processadas neste tipo de
+ambiente?
+O processamento batch tem a característica de não exigir a interação do usuário com a aplicação. Todas as entradas e
+saídas de dados da aplicação são implemetadas por algum tipo de memória secundária, geralmente arquivos em disco.
+Alguns exemplos de aplicações originalmente processadas em batch são programas envolvendo cálculos numéricos,
+compilações, ordenações, backups e todos aqueles onde não é necessária a interação com o usuário.
+
+11. Como funcionam os sistemas de tempo compartilhado? Quais as vantagens em utilizá-los?
+Os sistemas de tempo compartilhado (time-sharing) permitem que diversos programas sejam executados a partir da
+divisão do tempo do processador em pequenos intervalos, denomidados fatia de tempo (time-slice). A vantagem na sua
+utilização é possibilitar para cada usuário um ambiente de trabalho próprio, dando a impressão de que todo o sistema
+está dedicado, exclusivamente, a ele.
+
+12. Qual a grande diferença entre sistemas de tempo compartilhado e tempo real? Quais aplicações são
+indicadas para sistemas de tempo real?
+O fator tempo de resposta. Nos sistemas de tempo real, os tempos de resposta devem estar dentro de limites rígidos.
+Aplicações de controle de processos, como no monitoramento de refinarias de petróleo, controle de tráfego aéreo, de
+usinas termoelétricas e nucleares são executadas em sistemas de tempo real.
+
+13. O que são sistemas com múltiplos processadores e quais as vantagens em utilizá-los?
+Os sistemas com múltiplos processadores caracterizam-se por possuir duas ou mais UCPs interligadas e trabalhando em
+conjunto. A vantagem deste tipo de sistema é permitir que vários programas sejam executados ao mesmo tempo ou que
+um mesmo programa seja subdividido em partes para serem executadas simultaneamente em mais de um processador.
+
+14. Qual a grande diferença entre sistemas fortemente acoplados e fracamente acoplados?
+Nos sistemas fortemente acoplados existem vários processadores compartilhando uma única memória física e
+dispositivos de entrada/saída, sendo gerenciados por apenas um sistema operacional. Os sistemas fracamente acoplados
+caracterizam-se por possuir dois ou mais sistemas computacionais conectados através de linhas de comunicação. Cada
+sistema funciona de forma independente, possuindo seu próprio sistema operacional e gerenciando seus próprios
+recursos, como UCP, memória e dispositivos de entrada/saída.
+
+15. O que é um sistema SMP? Qual a diferença para um sistema NUMA?
+Nos sistemas SMP, o tempo de acesso à memória principal pelos diversos processadores é uniforme. Nos sistemas
+NUMA, existem diversos conjuntos de processadores e memória principal interconectados, onde o tempo de acesso à
+memória principal varia em função da sua localização física.
+
+16. O que é um sistema fracamente acoplado? Qual a diferença entre sistemas operacionais de rede e
+sistemas operacionais distribuídos?
+Os sistemas fracamente acoplados caracterizam-se por possuir dois ou mais sistemas computacionais conectados através
+de linhas de comunicação. Cada sistema funciona de forma independente, possuindo seu próprio sistema operacional e
+gerenciando seus próprios recursos, como UCP, memória e dispositivos de entrada/saída. Os sistemas operacionais de
+rede permitem que um host compartilhe seus recursos, como uma impressora ou diretório, com os demais hosts da rede
+enquanto que nos sistemas distribuídos, o sistema operacional esconde os detalhes dos hosts individuais e passa a tratálos como um conjunto único, como se fosse um sistema fortemente acoplado.
+
+=========================================================================================================================
+
+Capítulo 2 – Conceitos de Hardware e Software
+
+1. Quais são as unidades funcionais de um sistema computacional?
+Processador ou unidade central de processamento, memória principal e dispositivos de entrada/saída.
+
+2. Quais os componentes de um processador e quais são suas funções?
+Um processador é composto por unidade de controle, unidade lógica e aritmética, e registradores. A unidade de controle
+(UC) é responsável por gerenciar as atividades de todos os componentes do computador, como a gravação de dados em
+discos ou a busca de instruções na memória. A unidade lógica e aritmética (ULA), como o nome indica, é responsável
+pela realização de operações lógicas (testes e comparações) e aritméticas (somas e subtrações).
+
+3. Como a memória principal de um computador é organizada?
+A memória é composta por unidades de acesso chamadas células, sendo cada célula composta por um determinado
+número de bits. Atualmente, a grande maioria dos computadores utiliza o byte (8 bits) como tamanho de célula.
+
+4. Descreva os ciclos de leitura e gravação da memória principal.
+No ciclo de leitura, a UCP armazena no MAR, o endereço da célula a ser lida e gera um sinal de controle para a
+memória principal, indicando que uma operação de leitura deve ser realizada. O conteúdo da(s) célula(s), identificada(s)
+pelo endereço contido no MAR, é transferido para o MBR
+No cliclo de gravação, a UCP armazena no MAR, o endereço da célula que será gravada e armazena no MBR, a
+informação que deverá ser gravada. A UCP gera um sinal de controle para a memória principal, indicando que uma
+operação de gravação deve ser realizada e a informação contida no MBR é transferida para a célula de memória
+endereçada pelo MAR
+
+5. Qual o número máximo de células endereçadas em arquiteturas com MAR de 16, 32 e 64 bits?
+MAR=16 bits número max células = 216
+MAR=32 bits número max células = 232
+MAR=64 bits número max células = 264
+
+6. O que são memórias voláteis e não-voláteis?
+Memórias voláteis precisam estar sempre energizadas para manter suas informações, o que não acontece com as nãovoláteis.
+
+7. Conceitue memória cache e apresente as principais vantagens no seu uso.
+A memória cache é uma memória volátil de alta velocidade, porém com pequena capacidade de armazenamento. O
+tempo de acesso a um dado nela contido é muito menor que se o mesmo estivesse na memória principal. O propósito do
+uso da memória cache é minimizar a disparidade existente entre a velocidade com que o processador executa instruções
+e a velocidade com que dados são acessados na memória principal.
+
+8. Quais as diferenças entre a memória principal e a memória secundária?
+A memória principal é um dispositivo de armazenamento, em geral volátil, onde são armazenados instruções e dados
+utilizados pelo processador durante a execução de programas. A memória secundária é um dispositivo não-volátil com
+maior capacidade de armazenamento, porém com menor velocidade de acesso aos seus dados armazenados.
+
+9. Diferencie as funções básicas dos dispositivos de E/S.
+Os dispositivos de entrada e saída podem ser divididos em duas categorias: os que são utilizados como memória
+secundária e os que servem para a interface usuário-máquina. Os dispositivos utilizados como memória secundária
+(discos e fitas magnéticas) caracterizam-se por ter capacidade de armazenamento bastante superior ao da memória
+principal. Seu custo é relativamente baixo, porém o tempo de acesso à memória secundária é bem superior ao da
+memória principal. Outros dispositivos têm como finalidade a comunicação usuário-máquina, como teclados, monitores
+de vídeo, impressoras e plotters.
+
+10. Caracterize os barramentos processador-memória, E/S e backplane.
+Os barramentos processador-memória são de curta extensão e alta velocidade para que seja otimizada a transferência de
+informação entre processadores e memórias. Os barramentos de E/S possuem maior extensão, são mais lentos e
+permitem a conexão de diferentes dispositivos. O barramento de backplane tem a função de integrar os dois
+barramentos anteriores.
+
+11. Como a técnica de pipelining melhora o desempenho dos sistemas computacionais?
+Permitindo ao processador executar múltiplas instruções paralelamente em estágios diferentes.
+
+12. Compare as arquiteturas de processadores RISC e CISC.
+Ver Tabela 2.3 do livro.
+
+13. Conceitue a técnica de benchmark e como é sua realização.
+A técnica conhecida como benchmark permite a análise de desempenho comparativa entre sistemas computacionais.
+Neste método, um conjunto de programas é executado em cada sistema avaliado e o tempo de execução comparado. A
+escolha dos programas deve ser criteriosa para refletir os diferentes tipos de aplicação.
+
+14. Por que o código-objeto gerado pelo tradutor ainda não pode ser executado?
+Isso ocorre em função de um programa poder chamar sub-rotinas externas, e, neste caso, o tradutor não tem como
+associar o programa principal às sub-rotinas chamadas. Esta função é realizada pelo linker.
+
+15. Por que a execução de programas interpretados é mais lenta que a de programas compilados?
+Como não existe a geração de um código executável, as instruções de um programa devem ser traduzidas toda vez que
+este for executado.
+
+16. Quais as funções do linker?
+Suas funções básicas são resolver todas as referências simbólicas existentes entre os módulos de um programa e
+reservar memória para sua execução.
+
+17. Qual a principal função do loader?
+Carregar na memória principal um programa para ser executado.
+
+18. Quais as facilidades oferecidas pelo depurador?
+O depurador oferece ao usuário recursos como acompanhar a execução de um programa instrução por instrução;
+possibilitar a alteração e visualização do conteúdo de variáveis; implementar pontos de parada dentro do programa
+(breakpoint), de forma que, durante a execução, o programa pare nesses pontos e especificar que, toda vez que o
+conteúdo de uma variável for modificado, o programa envie uma mensagem (watchpoint).
+
+19. Pesquise comandos disponíveis em linguagens de controle de sistemas operacionais.
+Pesquisa livre.
+
+20. Explique o processo de ativação (boot) do sistema operacional.
+Inicialmente, todo o código do sistema operacional reside memória secundária como discos e fitas. Toda vez que um
+computador é ligado, o sistema operacional tem que ser carregado da memória secundária para a memória principal.
+Esse procedimento é realizado por um programa localizado em um bloco específico do disco (boot block).
+
+=======================================================================================================================
+
+Capítulo 3 - Concorrência
+
+1. O que é concorrência e como este conceito está presente nos sistemas operacionais multiprogramáveis?
+Concorrência é o princípio básico para projeto e implementação dos sistemas operacionais multiprogramáveis onde é
+possível o processador executar instruções em paralelo com operações de E/S. Isso possibilita a utilização concorrente
+da UCP por diversos programas sendo implementada de maneira que, quando um programa perde o uso do processador
+e depois retorna para continuar o processamento, seu estado deve ser idêntico ao do momento em que foi interrompido.
+O programa deverá continuar sua execução exatamente na instrução seguinte àquela em que havia parado, aparentando
+ao usuário que nada aconteceu.
+
+2. Por que o mecanismo de interrupção é fundamental para a implementação da multiprogramação?
+Porque é em função desse mecanismo que o sistema operacional sincroniza a execução de todas as suas rotinas e dos
+programas dos usuários, além de controlar dispositivos.
+
+3. Explique o mecanismo de funcionamento das interrupções.
+Uma interrupção é sempre gerada por algum evento externo ao programa e, neste caso, independe da instrução que está
+sendo executada. Ao final da execução de cada instrução, a unidade de controle verifica a ocorrência de algum tipo de
+interrupção. Neste caso, o programa em execução é interrompido e o controle desviado para uma rotina responsável por
+tratar o evento ocorrido, denominada rotina de tratamento de interrupção. Para que o programa possa posteriormente
+voltar a ser executado, é necessário que, no momento da interrupção, um conjunto de informações sobre a sua execução
+seja preservado. Essas informações consistem no conteúdo de registradores, que deverão ser restaurados para a
+continuação do programa.
+
+4. O que são eventos síncronos e assíncronos? Como estes eventos estão relacionados ao mecanismo de
+interrupção e exceção?
+Evento síncronos são resultados direto da execução do programa corrente. Tais eventos são previsíveis e, por definição,
+só podem ocorrer um único de cada vez. Eventos assíncronos não são relacionados à instrução do programa corrente.
+Esses eventos, por serem imprevisíveis, podem ocorrer múltiplas vezes, como no caso de diversos dispositivos de E/S
+informarem ao processador que estão prontos para receber ou transmitir dados. Uma interrupção é um evento
+assíncrono enquanto uma exceção é um evento síncrono.
+
+5. Dê exemplos de eventos associados ao mecanismo de exceção.
+Uma instrução que gere a situação de overflow ou uma divisão por zero.
+
+6. Qual a vantagem da E/S controlada por interrupção comparada com a técnica de polling?
+Na E/S controlada por interrupção, as operações de E/S podem ser realizadas de uma forma mais eficiente. Em vez de o
+sistema periodicamente verificar o estado de uma operação pendente como na técnica de polling, o próprio controlador
+interrompe o processador para avisar do término da operação. Com esse mecanismo, o processador, após a execução de
+um comando de leitura ou gravação, permanece livre para o processamento de outras tarefas.
+
+7. O que é DMA e qual a vantagem desta técnica?
+A técnica de DMA permite que um bloco de dados seja transferido entre a memória principal e dispositivos de E/S,
+sem a intervenção do processador, exceto no início e no final da transferência. Quando o sistema deseja ler ou gravar
+um bloco de dados, o processador informa ao controlador sua localização, o dispositivo de E/S, a posição inicial da
+memória de onde os dados serão lidos ou gravados e o tamanho do bloco. Com estas informações, o controlador realiza
+a transferência entre o periférico e a memória principal, e o processador é somente interrompido no final da operação.
+
+8. Como a técnica de buffering permite aumentar a concorrência em um sistema computacional?
+Como o buffering permite minimizar o problema da disparidade da velocidade de processamento existente entre o
+processador e os dispositivos de E/S, esta técnica permite manter, na maior parte do tempo, processador e dispositivos
+de E/S ocupados.
+
+9. Explique o mecanismo de spooling de impressão.
+No momento em que um comando de impressão é executado, as informações que serão impressas são gravadas antes
+em um arquivo em disco, conhecido como arquivo de spool, liberando imediatamente o programa para outras
+atividades. Posteriormente, o sistema operacional encarrega-se em direcionar o conteúdo do arquivo de spool para a
+impressora.
+
+10. Em um sistema multiprogramável, seus usuários utilizam o mesmo editor de textos (200 Kb), compilador
+(300 Kb), software de correio eletrônico (200 Kb) e uma aplicação corporativa (500 Kb). Caso o sistema
+não implemente reentrância, qual o espaço de memória principal ocupado pelos programas quando 10
+usuários estiverem utilizando todas as aplicações simultaneamente? Qual o espaço liberado quando o
+sistema implementa reentrância em todas as aplicações?
+Sem reentrância, cada usuário teria sua cópia do código na memória totalizando 10 x (200 Kb + 300 Kb + 200 Kb + 500
+Kb) = 12.000 Kb. Caso a reentrância seja implementada, apenas uma cópia do código seria necessária na memória
+principal (200 Kb + 300 Kb + 200 Kb + 500 Kb) totalizando 1.200 Kb. Um total de 10.800 Kb seriam liberados da
+memória principal.
+
+11. Por que a questão da proteção torna-se fundamental em ambientes multiprogramáveis?
+Se considerarmos que diversos usuários estão compartilhando os mesmos recursos como memória, processador e
+dispositivos de E/S, deve existir uma preocupação em garantir a confiabilidade e a integridade dos programas e dados
+dos usuários, além do próprio sistema operacional.
+
+=====================================================================================================================
+
+Capítulo 4 – Estrutura do Sistema Operacional
+
+1. O que é o núcleo do sistema e quais são suas principais funções?
+É o conjunto de rotinas que oferece serviços aos usuários, suas aplicações, além do próprio sistema operacional. As
+principais funções do núcleo encontradas na maioria dos sistemas comerciais são: tratamento de interrupções e
+exceções; criação e eliminação de processos e threads; sincronização e comunicação entre processos e threads;
+escalonamento e controle dos processos e threads; gerência de memória; gerência do sistema de arquivos; gerência de
+dispositivos de E/S; suporte à redes locais e distribuídas; contabilização do uso do sistema; auditoria e segurança do
+sistema.
+
+2. O que é uma system call e qual sua importância para a segurança do sistema? Como as system calls são
+utilizadas por um programa?
+As system calls podem ser entendidas como uma porta de entrada para o acesso ao núcleo do sistema operacional e a
+seus serviços. Sempre que um usuário ou aplicação desejar algum serviço do sistema, é realizada uma chamada a uma
+de suas rotinas através de uma system call. Através dos parâmetros fornecidos na system call, a solicitação é processada
+e uma resposta é retornada a aplicação juntamente com um estado de conclusão indicando se houve algum erro. O
+mecanismo de ativação e comunicação entre o programa e o sistema operacional é semelhante ao mecanismo
+implementado quando um programa chama uma subrotina.
+
+3. O que são instruções privilegiadas e não privilegiadas? Qual a relação dessas instruções com os modos
+de acesso?
+Instruções privilegiadas são instruções que só devem ser executadas pelo sistema operacional ou sob sua supervisão,
+impedindo, assim, a ocorrência de problemas de segurança e integridade do sistema. As instruções não-privilegiadas
+não oferecem risco ao sistema. Quando o processador trabalha no modo usuário, uma aplicação só pode executar
+instruções não-privilegiadas, tendo acesso a um número reduzido de instruções, enquanto no modo kernel ou supervisor
+a aplicação pode ter acesso ao conjunto total de instruções do processador.
+
+4. Quais das instruções a seguir devem ser executas apenas em modo kernel? Desabilitar todas as
+interrupções, consultar a data e hora do sistema, alterar a data e hora do sistema, alterar informações
+residentes no núcleo do sistema, somar duas variáveis declaradas dentro do programa, realizar um desvio
+para um instrução dentro do próprio programa e acessar diretamente posições no disco.
+Desabilitar todas as interrupções, alterar a data e hora do sistema, alterar informações residentes no núcleo do sistema e
+acessar diretamente posições no disco.
+
+5. Explique como funciona a mudança de modos de acesso e dê um exemplo de como um programa faz uso
+desse mecanismo.
+Sempre que um programa necessita executar uma instrução privilegiada, a solicitação deve ser realizada através de uma
+chamada a uma system call, que altera o modo de acesso do processador do modo usuário para o modo kernel. Ao
+término da execução da rotina do sistema, o modo de acesso retorna para o modo usuário.
+
+6. Como o kernel do sistema operacional pode ser protegido pelo mecanismo de modos de acesso?
+Através do modo de acesso de uma aplicação determinado por um conjunto de bits localizado no registrador de status
+do processador ou PSW. Através desse registrador, o hardware verifica se a instrução pode ou não ser executada pela
+aplicação, possibilitando proteger o kernel do sistema operacional de um acesso indevido.
+
+7. Compare as arquiteturas monolítica e de camadas. Quais as vantagens e desvantagens de cada
+arquitetura?
+A arquitetura monolítica pode ser comparada com uma aplicação formada por vários módulos que são compilados
+separadamente e depois linkados, formando um grande e único programa executável, onde os módulos podem interagir
+livremente. Na arquitetura de camadas, o sistema é dividido em níveis sobrepostos. Cada camada oferece um conjunto
+de funções que podem ser utilizadas apenas pelas camadas superiores. A vantagem da estruturação em camadas é isolar
+as funções do sistema operacional, facilitando sua manutenção e depuração, além de criar uma hierarquia de níveis de
+modos de acesso, protegendo as camadas mais internas. Uma desvantagem para o modelo de camadas é o desempenho.
+Cada nova camada implica em uma mudança no modo de acesso.
+
+8. Quais as vantagens do modelo de máquina virtual?
+Além de permitir a convivência de sistemas operacionais diferentes no mesmo computador, a vantagem desse modelo é
+criar um isolamento total entre cada VM, oferecendo grande segurança para cada máquina virtual.
+
+9. Como funciona o modelo cliente-servidor na arquitetura microkernel? Quais suas vantagens e
+desvantagens dessa arquitetura?
+Sempre que uma aplicação deseja algum serviço, é realizada uma solicitação ao processo responsável. Neste caso, a
+aplicação que solicita o serviço é chamada de cliente, enquanto o processo que responde à solicitação é chamado de
+servidor. Um cliente, que pode ser uma aplicação de um usuário ou um outro componente do sistema operacional,
+solicita um serviço enviando uma mensagem para o servidor. O servidor responde ao cliente através de uma outra
+mensagem. A utilização deste modelo permite que os servidores executem em modo usuário, ou seja, não tenham
+acesso direto a certos componentes do sistema. Apenas o núcleo do sistema, responsável pela comunicação entre
+clientes e servidores, executa no modo kernel. Como conseqüência, se ocorrer um erro em um servidor, este poderá
+parar, mas o sistema não ficará inteiramente comprometido, aumentando assim a sua disponibilidade. Outra vantagem é
+que a arquitetura microkernel permite isolar as funções do sistema operacional por diversos processos servidores
+pequenos e dedicados a serviços específicos, tornado o núcleo menor, mais fácil de depurar e, conseqüentemente,
+aumentando sua confiabilidade. Na arquitetura microkernel, o sistema operacional passa a ser de mais fácil manutenção,
+flexível e de maior portabilidade. Apesar de todas as vantagens deste modelo, sua implementação, na prática, é muito
+difícil. Primeiro existe o problema de desempenho, devido a necessidade de mudança de modo de acesso a cada
+comunicação entre clientes e servidores. Outro problema é que certas funções do sistema operacional exigem acesso
+direto ao hardware, como operações de E/S.
+
+10. Por que a utilização da programação orientada a objetos é um caminho natural para o projeto de sistemas
+operacionais?
+Existe uma série de vantagens na utilização de programação por objetos no projeto e na implementação de sistemas
+operacionais. Os principais benefícios são: melhoria na organização das funções e recursos do sistema; redução no
+tempo de desenvolvimento; maior facilidade na manutenção e extensão do sistema; facilidade de implementação do
+modelo de computação distribuída.

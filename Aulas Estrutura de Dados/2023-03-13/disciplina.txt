@@ -1,0 +1,10 @@
+Ana 50 60
+Beth 80 70
+Caique 65 75
+Denilson 40 80
+Elisa 77 89
+Fernanda 58 67
+Gilberto 80 90
+Katia 75 75
+Larissa 45 75
+Marcos 60 70
